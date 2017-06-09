@@ -8,15 +8,16 @@ This Docker image is intended to use with your CI-CD pipeline (drone.io / travis
 
 # Usage
 
+```
 docker run \
      -e "GITHUB_REPO_URL=https://api.github.com/repos/so-random-dude/oneoffcodes" \
      -e "TAG_PREFIX=v" \
      -e "GITHUB_USERNAME=<YOURUSERNAME>" \
      -e "GITHUB_PASSWORD=<YOURPASSWORD>" \
      jaisonpjohn/github-tag-autoincrement
-     
+```     
 If you just need to know the version in making so that you can tag your artifact with that version before you push to your Artifactory (Dockerhub / JFrog Artifactory / ECR / GCR etc), just add "MODE=READONLY"
-
+```
 docker run \
      -e "GITHUB_REPO_URL=https://api.github.com/repos/so-random-dude/oneoffcodes" \
      -e "TAG_PREFIX=v" \
@@ -24,3 +25,4 @@ docker run \
      -e "GITHUB_PASSWORD=<YOURPASSWORD>" \
      -e "MODE=READONLY" \
      jaisonpjohn/github-tag-autoincrement
+```
