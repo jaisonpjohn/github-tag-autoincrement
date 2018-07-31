@@ -4,7 +4,7 @@
 [![Docker Stars](https://img.shields.io/docker/stars/jaisonpjohn/github-tag-autoincrement.svg)](https://hub.docker.com/r/jaisonpjohn/github-tag-autoincrement/)
 [![Docker pulls](https://img.shields.io/docker/pulls/jaisonpjohn/github-tag-autoincrement.svg)](https://hub.docker.com/r/jaisonpjohn/github-tag-autoincrement/)
 # github-tag-autoincrement
-This light weight Docker image is targeting a very primal need: a CI-CD pipeline hook-able docker image, which will auto-increment patch version (Semantic Versioning) without any other libraries in your codebase. For example, You can hook up this image in your CI-CD chain so that it will be invoked for each commit to master. By doing so, you can convert cryptic and hard-to-remember commit SHAs to nice auto-incrementable semver tags, for example v0.0.1.
+This light-weight Docker image is targeting a very primal need: a CI-CD pipeline hook-able docker image, which will auto-increment patch version (Semantic Versioning) without any other libraries in your codebase. For example, You can hook up this image in your CI-CD chain so that it will be invoked for each commit to master. By doing so, you can convert cryptic and hard-to-remember commit SHAs to nice auto-incrementable semver tags, for example v0.0.1.
 
 This Docker image is intended to use with your CI-CD pipeline (drone.io / travis) and it intends to address these 2 issues
 1) Including a library just to auto-increment your patch version and tag (Nebula release plugin or gradle git etc) in your codebase which has nothing to do with your business functionality.
